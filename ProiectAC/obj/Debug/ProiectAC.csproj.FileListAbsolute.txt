@@ -1,0 +1,23 @@
+d:\samuelp\my documents\visual studio 2013\Projects\ProiectAC\ProiectAC\bin\Debug\ProiectAC.exe.config
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\bin\Debug\ProiectAC.exe.config
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.csprojResolveAssemblyReference.cache
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.Properties.Resources.resources
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.Simulator.resources
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.csproj.GenerateResource.Cache
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\bin\Debug\ProiectAC.exe
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\bin\Debug\ProiectAC.pdb
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\bin\Debug\Microsoft.VisualBasic.PowerPacks.Design.dll
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.exe
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.pdb
+D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\ProiectAC.exe.config
+D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.exe
+D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.pdb
+D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.csprojResolveAssemblyReference.cache
+D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.Properties.Resources.resources
+D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.Simulator.resources
+D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.csproj.GenerateResource.Cache
+D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\ProiectAC.exe
+D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\ProiectAC.pdb
+D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
