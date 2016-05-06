@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asamblor.cs" />
     <Compile Include="Microcode.cs" />
     <Compile Include="Sequencer.cs" />
     <Compile Include="Simulator.cs">
