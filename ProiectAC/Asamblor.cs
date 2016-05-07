@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProiectAC
@@ -37,8 +34,7 @@ namespace ProiectAC
         bool compiledOk, asmFileOpened = false;
         bool isBase1 = false, isBase2 = false, isBase3 = false, isBase4 = false;
         bool isJMP = false, isCALL = false, isPUSHRi = false, isPOPRi = false;
-        bool isValImm, isIndexDest, isIndexSrc;
-        bool isError = false;
+        bool isValImm, isIndexDest, isIndexSrc, isError = false;
         String lineFile, opcode;
 
         string IM = "00", AD = "01", AI = "10", AX = "11";
@@ -321,7 +317,7 @@ namespace ProiectAC
                                 {
                                     codif += IM;
                                     isValImm = true;
-                                    valImediataBinar = Convert_Binary(valoareImediata, 16);
+                                    valImediataBinar = simulator.Convert_Binary(valoareImediata, 16);
                                     codif += "0000";
                                 }
                                 break;
@@ -384,7 +380,7 @@ namespace ProiectAC
                                 if (Convert.ToInt32(valIndex) >= -32767 && Convert.ToInt32(valIndex) <= 32767)
                                 {
                                     isIndexSrc = true;
-                                    valIndexSursa = Convert_Binary(valIndex, 16);
+                                    valIndexSursa = simulator.Convert_Binary(valIndex, 16);
                                 }
                                 else
                                 {
@@ -465,7 +461,7 @@ namespace ProiectAC
                                 if (Convert.ToInt32(valIndex) >= -32767 && Convert.ToInt32(valIndex) <= 32767)
                                 {
                                     isIndexDest = true;
-                                    valIndexDest = Convert_Binary(valIndex, 16);
+                                    valIndexDest = simulator.Convert_Binary(valIndex, 16);
                                 }
                                 else
                                 {
@@ -524,7 +520,7 @@ namespace ProiectAC
                                 {
                                     codif += IM;
                                     isValImm = true;
-                                    valImediataBinar = Convert_Binary(valoareImediata, 16);
+                                    valImediataBinar = simulator.Convert_Binary(valoareImediata, 16);
                                     codif += "0000";
                                 }
                                 else
@@ -610,7 +606,7 @@ namespace ProiectAC
                                     if (Convert.ToInt32(valIndex) >= -32767 && Convert.ToInt32(valIndex) <= 32767)
                                     {
                                         isIndexDest = true;
-                                        valIndexDest = Convert_Binary(valIndex, 16);
+                                        valIndexDest = simulator.Convert_Binary(valIndex, 16);
                                     }
                                     else
                                     {
@@ -667,7 +663,7 @@ namespace ProiectAC
                         offset = val - (simulator.getPCMax() + 2);
                         if ((offset >= -127) && (offset <= 127))
                         {
-                            offsetString = Convert_Binary(offset.ToString(), 8);
+                            offsetString = simulator.Convert_Binary(offset.ToString(), 8);
                         }
                         else
                         {
@@ -812,44 +808,6 @@ namespace ProiectAC
             }
         }
 
-        //convert a string into binary of nr bits 
-        //returns a string containing the bits
-        private string Convert_Binary(string st, int nr)
-        {
-            Int64 adresa = Convert.ToInt64(st);
-            Int64 n = adresa;
-            Int64 reg = 0;
-            string lineFile = "";
-            string str_reg = "";
-
-            if (n < 0)
-            {
-                n = (-1) * n - 1;
-            }
-            for (int i = 0; i < nr; i++)
-            {
-                reg = n % 2;
-                if (adresa < 0)
-                {
-                    if (reg == 0)
-                        reg = 1;
-                    else
-                    {
-                        if (reg == 1)
-                            reg = 0;
-                    }
-                }
-                n = n / 2;
-                lineFile += Convert.ToString(reg);
-            }
-
-            for (int i = 0; i < nr; i++)
-            {
-                str_reg += lineFile.Substring(nr - 1 - i, 1);
-            }
-            return str_reg;
-        }
-
         //load instructions into RAM MEMORY after compilation
         private void loadInstructionsIntoRAM()
         {
@@ -869,6 +827,15 @@ namespace ProiectAC
             }
 
             br.Close();
+        }
+
+        public bool IsCompiled()
+        {
+            return compiledOk;
+        }
+
+        public void resetContor() {
+            contor = -1;
         }
     }
 }

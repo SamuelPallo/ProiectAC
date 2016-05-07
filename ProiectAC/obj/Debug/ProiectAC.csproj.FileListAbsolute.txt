@@ -21,3 +21,5 @@ D:\samuelp\Desktop\ProiectAC\ProiectAC\obj\Debug\ProiectAC.csproj.GenerateResour
 D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\ProiectAC.exe
 D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\ProiectAC.pdb
 D:\samuelp\Desktop\ProiectAC\ProiectAC\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.MicroArhitecture.resources
+E:\Facultate\AnIII\Sem 2\Arhitectura calculatoarelor\ProiectAC\ProiectAC\obj\Debug\ProiectAC.Memory.resources
